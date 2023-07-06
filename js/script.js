@@ -16,42 +16,67 @@ To select an action, enter the command number:
         const firstNumber = Number(prompt(`Enter the first number:`));
         const secondNumber = Number(prompt(`Enter the second number:`));
 
-        const add = firstNumber + secondNumber;
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert(`One of the entered values ​​is not a number.`);
+            break;
+        } else {
+            const add = firstNumber + secondNumber;
 
-        alert(`${firstNumber} + ${secondNumber} = ${add}`);
+            alert(`${firstNumber} + ${secondNumber} = ${add}`);
 
-        break;
+            break; 
+        }
+
+        
     }
     else if (command == "2") {
         const firstNumber = Number(prompt(`Enter the first number:`));
         const secondNumber = Number(prompt(`Enter the second number:`));
 
-        const sub = firstNumber - secondNumber;
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert(`One of the entered values ​​is not a number.`);
+            break;
+        } else {
+            const sub = firstNumber - secondNumber;
 
-        alert(`${firstNumber} - ${secondNumber} = ${sub}`);
+            alert(`${firstNumber} - ${secondNumber} = ${sub}`);
 
-        break;
+            break;
+        }
     }
     else if (command == "3") {
         const firstNumber = Number(prompt(`Enter the first number:`));
         const secondNumber = Number(prompt(`Enter the second number:`));
 
-        const mult = firstNumber * secondNumber;
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert(`One of the entered values ​​is not a number.`);
+            break;
+        } else {
+            const mult = firstNumber * secondNumber;
 
-        alert(`${firstNumber} * ${secondNumber} = ${mult}`);
+            alert(`${firstNumber} * ${secondNumber} = ${mult}`);
 
-        break;
+            break;
+        }
     }
     else if (command == "4") {
         const firstNumber = Number(prompt(`Enter the first number:`));
         const secondNumber = Number(prompt(`Enter the second number:`));
 
-        const div = firstNumber / secondNumber;
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert(`One of the entered values ​​is not a number.`);
+            break;
+        } else {
+            const div = firstNumber / secondNumber;
 
-        alert(`${firstNumber} / ${secondNumber} = ${div}`);
+            alert(`${firstNumber} / ${secondNumber} = ${div}`);
 
-        break;
+            break; 
+        }
     }
+    else if (command == null) {
+        break;
+        }
     else {
         alert(`Error. Incorrectly entered data. Try again.`);
     }
